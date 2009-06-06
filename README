@@ -1,0 +1,6 @@
+js-hashing
+-------------
+
+js-hashing is a tool for hasing strings with JS.
+As of now this is tightly coupled with Rhino because it relies on some Java code.
+The goal is to eventually rewrite the Java parts in JS.

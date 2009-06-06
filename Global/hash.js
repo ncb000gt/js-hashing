@@ -35,9 +35,29 @@ global.hash = {
 	}
 	return input;
     },
+    /**
+     * Converts the byte array to base64.
+     *
+     * <code>
+     * var b64 = hash.to_base64(Packages.java.lang.String('Hi').getBytes('UTF-8'));
+     * </code>
+     *
+     * @param {Array} bytes - Array of bytes to encode
+     * @return {String} Base64 string from the encoded bytes
+     */
     to_base64: function(bytes) {
 	return Base64.encodeBytes(bytes);
     },
+    /**
+     * Converts the base64 string to a byte array
+     *
+     * <code>
+     * var bytes = hash.from_base64(<base64 string>);
+     * </code>
+     *
+     * @param {String} str - Base64 string to decode
+     * @return {Array} Array of bytes representing the encoded data.
+     */
     from_base64: function(str) {
 	return Base64.decode(str);
     },
